@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کروز شاپ | فروشگاه جم فری فایر</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    #banner {
+      background: linear-gradient(to left, #ff8800, #ffbb33);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    #products, #order-form {
+      padding: 40px 20px;
+    }
+    .product {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 400px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    button, input[type=submit] {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #contact, #order-form {
+      background: #fff;
+      text-align: center;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, select {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>کروز شاپ</h1>
+    <nav>
+      <a href="#products">محصولات</a>
+      <a href="#order-form">سفارش</a>
+      <a href="#contact">تماس با ما</a>
+    </nav>
+  </header>
+
+  <section id="banner">
+    <h2>خرید سریع و مطمئن جم فری فایر از کروز شاپ</h2>
+    <p>تحویل فوری | پرداخت امن</p>
+  </section>
+
+  <section id="products">
+    <h3>محصولات</h3>
+
+    <div class="product">
+      <h4>100 جم فری فایر</h4>
+      <p>قیمت: 35,000 تومان</p>
+    </div>
+
+    <div class="product">
+      <h4>310 جم فری فایر</h4>
+      <p>قیمت: 99,000 تومان</p>
+    </div>
+
+    <div class="product">
+      <h4>520 جم فری فایر</h4>
+      <p>قیمت: 160,000 تومان</p>
+    </div>
+
+  </section>
+
+  <section id="order-form">
+    <h3>فرم ثبت سفارش</h3>
+    <form action="https://example.com/payment" method="POST">
+      <label for="product">انتخاب محصول:</label>
+      <select name="product" id="product" required>
+        <option value="100 جم">100 جم - 35,000 تومان</option>
+        <option value="310 جم">310 جم - 99,000 تومان</option>
+        <option value="520 جم">520 جم - 160,000 تومان</option>
+      </select>
+
+      <label for="uid">شناسه بازی (UID):</label>
+      <input type="text" id="uid" name="uid" required>
+
+      <label for="name">نام شما:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">شماره تماس (برای هماهنگی):</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <input type="submit" value="پرداخت و ثبت سفارش">
+    </form>
+  </section>
+
+  <section id="contact">
+    <h3>تماس با ما</h3>
+    <p>پشتیبانی سریع در واتساپ:</p>
+    <p><a href="https://wa.me/989351234567" target="_blank">0935 123 4567</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 کروز شاپ - تمامی حقوق محفوظ است.</p>
+  </footer>
+</body>
+</html>
